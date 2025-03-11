@@ -122,6 +122,10 @@ header {
     color: white;
     background-position: 95%;
     cursor: pointer;
+    transition: 0.3s ease ;
+}
+#active-one {
+    background-color: #0A2046;
 }
 .check-grp {
     display: flex;
