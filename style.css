@@ -1,5 +1,8 @@
 *{
     font-family: "Mulish", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 header {
     background-color: #EBE9EC;
@@ -49,9 +52,14 @@ header {
     font-size: 23px;
     color: white;
 }
+.nav button:hover {
+    background-color: #0A2046;
+    color: #ffffff;
+    border: 1px solid #0A2046;
+}
 .component1{
     display: flex;
-    padding: 2% 4% 6% 4%;
+    padding: 2% 4% 5% 4%;
     justify-content: space-between;
     align-items: center;
 }
@@ -61,7 +69,7 @@ header {
 .image {
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .image img{
     max-width: 295px !important;
@@ -70,6 +78,7 @@ header {
     position: relative;
     left: 80px;
     top: 80px;
+    margin-bottom: 45px;
 }
 .about h1 {
     font-size: 48px;
@@ -77,12 +86,16 @@ header {
     color: #0A2046;
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
 }
 .about h4{
     margin: 0;
     color: #0A2046;
     font-size: 26px;
     font-weight: 500;
+}
+.about ul {
+    padding: 20px;
 }
 .about li{
     color: #0A2046;
@@ -93,20 +106,22 @@ header {
 }
 .component2{
     display:flex;
-    padding: 2% 4%;
+    padding: 4%;
     column-gap: 15px;    
 }
 .left-panel{
-    width: 40%;
+    /* width: 40%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    flex-grow: 1;
 }
 .right-panel{
-    width: 60%;
+    /* width: 60%; */
     background-color: #EBE9EC;
     padding: 5%;
+    flex-grow: 3;
 }
 .left-panel p{
     margin: 0;
@@ -125,6 +140,9 @@ header {
     transition: 0.3s ease ;
 }
 #active-one {
+    background-color: #0A2046;
+}
+.option:hover {
     background-color: #0A2046;
 }
 .check-grp {
@@ -165,7 +183,7 @@ p.error-message {
 }
 .container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 .component3{
@@ -215,6 +233,15 @@ p.error-message {
     padding: 1% 4%;
     display: flex;
 }
+.first{
+    width: 63%;
+}
+.second{
+    width: 35%;
+}
+.second img{
+    height: 90%;
+}
 .first h1 {
     color: #0A2046;
     font-size: 36px;
@@ -225,7 +252,7 @@ p.error-message {
     margin: 0;
     font-size: 16px;
     font-weight: 400;
-    margin: 10px 20px 0 0;
+    margin: 12px 30px 0 0;
     text-align: justify;
 }
 .first h3 {
@@ -234,27 +261,30 @@ p.error-message {
     margin: 0;
     padding-top: 10px;
 }
-.first ul{
-    list-style: none;
-    padding: 0;
-    color: #0FBDC7;
-}
-ul.custom-list li span {
+
+.custom-list span {
     background: #0A2046;
     font-size: 18px;
     border: 1px solid #0A2046;
     border-radius: 50%;
-    padding: 12px 18px;
+    padding: 8px 15px;
     margin-right: 10px;
 }
-ul.custom-list li{
+.custom-list {
     width: 100%;
-    padding: 20px 0;
+    padding: 25px 0;
+    color: #0FBDC7;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.custom-list p{
+    margin: 0;
 }
 .component5{
     background-image: url('images/bg.png');
     background-repeat: no-repeat;
-    width: 91%;
+    width: 100%;
     display: flex;
     position:relative;
     padding: 7rem 4rem;
@@ -650,4 +680,98 @@ button a {
 }
 #scroll-btn2 {
     background-color: #0A2046;
+}
+@media only screen and (max-width: 425px){
+    .nav{
+        display: none;
+    }
+    #head {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .contact{
+        width: 100%;
+    }
+    .component1, .component2, .component4, .component6, .component7, .component10, .component11 {
+        flex-direction: column;
+    }
+    .blog-1{
+        flex-direction: column;
+    }
+    .about{
+        text-align: center;
+        width: 100%;
+    }
+    .about, .component3, .first h1{
+        font-size: 30px;
+    }
+    .about h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .about ul{
+        padding: 0;
+        text-align: center;
+        list-style: inside;
+        margin-bottom: 10px;
+    }
+    .about li{
+        font-size: 12px;
+    }
+    .image{
+        width: 100%;
+    }
+    .image1{
+        left: 50px;
+    }
+    .image img {
+        max-width: 200px !important;
+    }
+    .component2{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .second{
+        margin-top: 10px;
+        /* width: 90%; */
+    }
+    .slidedar{
+        overflow: hidden;
+    }
+    .component5{
+        padding: 0;
+    }
+    .plan{
+        grid-template-columns: 1fr;
+    }
+    .component3 .box{
+        padding: 2%;
+        gap: 10px;
+    }
+    .text h4 {
+        font-size: 15px;
+    }
+    .text p{
+        font-size: 12px;
+    }
+    .component3 .square{
+        max-width: 80px;
+        height: 65px;
+    }
+    .square img {
+        width: 45px;
+    }
+    .first p {
+        font-size: 13px;
+        margin: 15px 20px 0 0;
+    }
+    .first h3 {
+        font-size: 22px;
+    }
+    .custom-list {
+        padding: 10px 0;
+    }
+
 }
