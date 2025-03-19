@@ -57,6 +57,9 @@ header {
     color: #ffffff;
     border: 1px solid #0A2046;
 }
+.dropdown{
+    display: none;
+}
 .component1{
     display: flex;
     padding: 2% 4% 5% 4%;
@@ -240,7 +243,7 @@ p.error-message {
     width: 35%;
 }
 .second img{
-    height: 90%;
+    height: 93%;
 }
 .first h1 {
     color: #0A2046;
@@ -281,14 +284,18 @@ p.error-message {
 .custom-list p{
     margin: 0;
 }
+.custom-list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
 .component5{
     background-image: url('images/bg.png');
     background-repeat: no-repeat;
     width: 100%;
     display: flex;
     position:relative;
-    padding: 7rem 4rem;
-    
+    padding: 7rem 4rem;    
 }
 .benefit-exp{
     width: 30%;
@@ -607,6 +614,7 @@ p.error-message {
     width: 120px;
     height: 35px;
     margin-bottom: 25px;
+    border: 0;
 }
 .blog-txt span{
     color: #0FBDC7;
@@ -648,7 +656,7 @@ p.error-message {
 }
 .social-icon {
     display: flex;
-    gap: 25%;
+    gap: 18%;
     align-items: center;
 }
 .footer-img img{
@@ -687,13 +695,24 @@ button a {
     }
     #head {
         flex-direction: column-reverse;
-        padding: 10px;
+        padding: 15px;
+    }
+    .dropdown{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+    .log {
+        display: flex;
+        gap: 160px;
+        margin-top: 10px;
     }
     .contact{
         width: 100%;
     }
-    .component1, .component2, .component4, .component6, .component7, .component10, .component11 {
+    .component1, .component2, .component4, .component6, .component5, .component7, .component10, .component11 {
         flex-direction: column;
+        /* width: 100%; */
     }
     .blog-1{
         flex-direction: column;
@@ -702,7 +721,10 @@ button a {
         text-align: center;
         width: 100%;
     }
-    .about, .component3, .first h1{
+    .about h1 {
+        font-size: 30px;
+    }
+    .component3, .first h1{
         font-size: 30px;
     }
     .about h4{
@@ -720,12 +742,13 @@ button a {
     }
     .image{
         width: 100%;
+        margin : 20px 0;
     }
     .image1{
         left: 50px;
     }
     .image img {
-        max-width: 200px !important;
+        max-width: 196px !important;
     }
     .component2{
         display: none;
@@ -733,18 +756,66 @@ button a {
     .container{
         grid-template-columns: 1fr;
     }
+    .first{
+        width: 100%;
+    }
     .second{
+        width: 100%;
         margin-top: 10px;
-        /* width: 90%; */
+    }
+    .second img {
+        max-width: 385px;
+    }
+    .benefit-exp {
+        width: 100%;
     }
     .slidedar{
+        width: 100%;
         overflow: hidden;
+        padding-top: 30px;
+    }
+    .slidedar::before{
+        transform: scale(0.6);
+        left: 0;
+        top: 85px;
+    }
+    .slide{
+        height: 300px;
+        overflow: hidden;
+        left: 0px;
+        padding: 10px;
+    }
+    .head1 img {
+        width: 35px;
+    }
+    .head1 span {
+        font-size: 35px;
     }
     .component5{
-        padding: 0;
+        padding: 0 0 0 3%;
+        gap: 25px;
+        margin-bottom: 3rem;
     }
     .plan{
         grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .plan img {
+        padding: 8px;
+        width: 80px;
+        margin-top: -61px;
+    }
+    .plan-ex p{
+        padding: 10px 5px 0px 10px;
+    }
+    .plan-ex.p2 {
+        height: 160px;
+    }
+    .plan-ex.p1 {
+        height: 160px;
+    }
+    .plan-h {
+        margin-bottom: 10px;
     }
     .component3 .box{
         padding: 2%;
@@ -773,5 +844,144 @@ button a {
     .custom-list {
         padding: 10px 0;
     }
+    .custom-list p{
+        font-size: 12px;
+        margin: 0;
+    }
+    .slide p{
+        font-size: 14px;
+    }
+    .slide li{
+        font-size: 12px;
+    }
+    .component6{
+        padding: 8% 4%;
+        width: 100%;
+    }
+    .fam-img {
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        padding: 0;
+    }
+    .content h3{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .policy{
+        width: 100%;
+    }
+    .policy-img{
+        width: 100%;
+    }
+    .policy-img img {
+        max-width: 296px;
+        margin-top: 20px;
+    }
+    .plan-h  h3{
+        font-size: 30px;
+    }
+    .component9 h3{
+        font-size: 30px;
+    }
+    .component9{
+        padding: 1rem;
+    }
+    .policy h3{
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    .policy p{
+        margin-bottom: 5px;
+    }
+    .check{
+        margin-bottom: 5px;
+    }
+    .component10{
+        padding: 2rem 1rem;
+    }
+    .part1 {
+        width: 100%;
+    }
+    .part2{
+        width: 100%;
+    }
+    .part1 h3{
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .part1 img{
+        display: none;
+    }
+    .custom img {
+        width: 80px;
+        height: 80px;
+    }
+    .custom h5 {
+        font-size: 15px;
+    }
+    .cd p {
+        font-size: 10px;
+    }
+    .component11{
+        padding: 0 1rem;
+        margin-top: 4rem;
 
+    }
+    .faq-img{
+        display: none;
+    }
+    .faq-txt {
+        width: 100%;
+        padding: 5px;
+    }
+    .faq-txt p{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .faq-txt button{
+        width: 42%;
+        background-position-x: 128px
+    }
+    .component12 {
+        padding: 2rem 1rem;
+    }
+    .component12 h3 {
+        font-size: 30px;
+    }
+    .blog-img {
+        width: 100%;
+    }
+    .blog-img img {
+        max-width: 392px;
+    }
+    .blog-txt h5 {
+        font-size: 18px;
+    }
+    .blog-txt p {
+        font-size: 14px;
+    }
+    .blog-2 {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .blog{
+        width: 100%;
+    }
+    .last{
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .footer-img {
+        width: 100%;
+    }
+    .footer-txt {
+        width: 100%;
+    }
+    .social-icon{
+        gap: 15%;
+    }
+    
 }
