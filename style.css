@@ -315,13 +315,19 @@ p.error-message {
     gap: 10px;
     /* align-items: center; */
 }
+.swiper-button-prev:after{
+    content: url('images/Left-Arrowbutton.png')!important;
+}
+.swiper-button-next:after{
+    content: url('images/Right-Arrowbutton.png')!important;
+}
 .slide{
     border: 1px solid white;
     background-color: #ffffff;
     padding: 1.5rem;
     position: relative;
-    right: 20px;
     overflow: visible;
+    /* width: 20%; */
 }
 .slidedar::before{
     content: url('images/dotted bg.png');
