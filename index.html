@@ -218,46 +218,86 @@
                 <p>Buying health insurance offers numerous benefits, ensuring financial security and access to quality
                     healthcare.</p>
             </div>
-            <div class="slidedar">
-                <div class="slide box1">
-                    <div class="head1">
-                        <img src="images/financal-protection-icon.png" alt="..">
-                        <span>01</span>
+            <div class="slidedar swiper">
+                <swiper-container class="swiper-wrapper mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
+                space-between="30" free-mode="true">
+                    <div class="slide box1 swiper-slide">
+                        <div class="head1">
+                            <img src="images/financal-protection-icon.png" alt="..">
+                            <span>01</span>
+                        </div>
+                        <p><strong>Financial Protection Against Medical Expenses</strong></p>
+                        <ul>
+                            <li>Covers high costs of hospitalization, surgeries, and treatments, reducing the financial
+                                burden.</li>
+                            <li>Protects savings from being drained by unexpected medical emergencies.</li>
+                        </ul>
                     </div>
-                    <p><strong>Financial Protection Against Medical Expenses</strong></p>
-                    <ul>
-                        <li>Covers high costs of hospitalization, surgeries, and treatments, reducing the financial
-                            burden.</li>
-                        <li>Protects savings from being drained by unexpected medical emergencies.</li>
-                    </ul>
-                </div>
-                <div class="slide box2">
-                    <div class="head1">
-                        <img src="images/acess-quality-icon.png" alt="..">
-                        <span>02</span>
+                    <div class="slide box2 swiper-slide">
+                        <div class="head1">
+                            <img src="images/acess-quality-icon.png" alt="..">
+                            <span>02</span>
+                        </div>
+                        <p><strong>Access to Quality Healthcare</strong></p>
+                        <ul>
+                            <li>Ensures access to a wide network of hospitals, specialists, and healthcare providers.
+                            </li>
+                            <li>Provides cashless treatment options at network hospitals (insurance directly pays the
+                                hospital).</li>
+                        </ul>
                     </div>
-                    <p><strong>Access to Quality Healthcare</strong></p>
-                    <ul>
-                        <li>Ensures access to a wide network of hospitals, specialists, and healthcare providers.</li>
-                        <li>Provides cashless treatment options at network hospitals (insurance directly pays the
-                            hospital).</li>
-                    </ul>
-                </div>
-                <div class="slide box3">
-                    <div class="head1">
-                        <img src="images/preventing-care-icon.png" alt="..">
-                        <span>03</span>
+                    <div class="slide box3 swiper-slide">
+                        <div class="head1">
+                            <img src="images/preventing-care-icon.png" alt="..">
+                            <span>03</span>
+                        </div>
+                        <p><strong>Coverage for Preventive Care</strong></p>
+                        <ul>
+                            <li>Encourages preventive care, including annual checkups, vaccinations, and screenings.
+                            </li>
+                            <li>Detects health issues early, reducing treatment costs in the long term.</li>
+                        </ul>
                     </div>
-                    <p><strong>Coverage for Preventive Care</strong></p>
-                    <ul>
-                        <li>Encourages preventive care, including annual checkups, vaccinations, and screenings.</li>
-                        <li>Detects health issues early, reducing treatment costs in the long term.</li>
-                    </ul>
-                </div>
-                <!-- <div class="scroller">
-                    <button class = "btn-scroll" id="scroll-btn1">&lt;</button>
-                    <button class = "btn-scroll" id="scroll-btn2">&gt;</button>
-                </div> -->
+                    <div class="slide box4 swiper-slide">
+                        <div class="head1">
+                            <img src="images/preventing-care-icon.png" alt="..">
+                            <span>04</span>
+                        </div>
+                        <p><strong>Tax Benefits</strong></p>
+                        <ul>
+                            <li>Premiums are eligible for tax deductions under applicable laws.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide box5 swiper-slide">
+                        <div class="head1">
+                            <img src="images/preventing-care-icon.png" alt="..">
+                            <span>05</span>
+                        </div>
+                        <p><strong>Mental Health and Wellness Coverage</strong></p>
+                        <ul>
+                            <li>Covers therapy, counseling, and psychiatric treatments.
+                            </li>
+                            <li>Supports emotional well-being alongside physical health</li>
+                        </ul>
+                    </div>
+                    <div class="slide box6 swiper-slide">
+                        <div class="head1">
+                            <img src="images/preventing-care-icon.png" alt="..">
+                            <span>06</span>
+                        </div>
+                        <p><strong> Customizable Add-Ons</strong></p>
+                        <ul>
+                            <li>Includes maternity benefits, critical illness cover, dental, and vision care
+                            </li>
+                            <li>Tailor policies to suit individual or family needs</li>
+                        </ul>
+                    </div>
+                </swiper-container>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
         <div class="component6">
@@ -504,16 +544,12 @@
 
 
 
-
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="app.js"></script>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
