@@ -1,3 +1,11 @@
+  function toggle (){
+    const navList = document.querySelector('.nav');
+    navList.classList.toggle('active');
+ }
+
+
+
+
 const form = document.getElementById('Insurance-Form');
 
 form.addEventListener('submit',function(event){
@@ -13,6 +21,7 @@ form.addEventListener('submit',function(event){
   const whatsapp = document.getElementById('whatsapp').checked;
 
   let valid = true;
+  let errorMessages = [];
 
   if(adult.trim() === ''){
     alert('Name is required');
@@ -22,15 +31,38 @@ form.addEventListener('submit',function(event){
     alert('Name is required');
     valid = false;
   }
-  const mobileRegex = /^[0-9]{10}$/; // Simple check for a 10-digit number
+  const mobileRegex = /^[0-9]{10}$/; 
   if (!mobileRegex.test(mobile)) {
     alert('Please enter a valid 10-digit mobile number');
     valid = false;
   }
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   if (!emailRegex.test(email)) {
+    errorMessages.push('Please enter a valid email address.');
     alert('Please enter a valid email address');
     valid = false;
+  }
+  
+  if (valid){
+    const formData = {
+      adult: adult,
+      kid: kid,
+      mobile: mobile,
+      email: email,
+      pincode : pincode,
+      city: city,
+      terms: terms ? 'Yes' : 'No',
+      whatsapp: whatsapp ? 'Yes' : 'No'
+    };
+
+    localStorage.setItem('formData',JSON.stringify(formData));
+
+    console.log(formData);
+
+    alert("form data has been stored in local Storage")
+  }
+  else{
+    alert("please fix the Error:\n' " + errorMessages.join('\n'));
   }
 
 
@@ -43,7 +75,7 @@ form.addEventListener('submit',function(event){
 
 
  form.reset();
-})
+});
 
 
 const swiper = new Swiper('.mySwiper', {
@@ -60,5 +92,6 @@ const swiper = new Swiper('.mySwiper', {
     prevEl: '.swiper-button-prev',
   }
 });
+
 
 

@@ -19,7 +19,7 @@
         <div id="head">
             <div class="log">
                 <img src="images/main-logo1.png" alt="logo">
-                <img class="dropdown" src="images/solar_hamburger-menu-linear.png" alt="">
+                <img class="dropdown" src="images/solar_hamburger-menu-linear.png" onclick="toggle()" alt="">
 
             </div>
             <div class="contact">
@@ -90,14 +90,15 @@
 
             </div>
             <div class="right-panel">
-                <form id="Insurance-Form">
+                <form id="Insurance-Form" autocomplete="on">
                     <div class="grp">
                         <input type="text" name="adult" id="adult" placeholder="Adult" required>
                         <input type="text" name="kid" id="kid" placeholder="Kid">
                     </div>
                     <div class="grp">
                         <input type="tel" id="mobile" placeholder="Mobile No." required>
-                        <input type="email" id="email" placeholder="Email" required>
+                        <input id="email" placeholder="Email" required autocomplete="off">
+                        <p id="errorM"></p>
                     </div>
                     <div class="grp">
                         <input type="text" id="pincode" placeholder="Pincode" required>
