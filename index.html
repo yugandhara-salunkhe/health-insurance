@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Health Insurance</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,24 @@
                 <li> Other Insurance</li>
                 <li> Claims</li>
             </ul>
-            <button>Login</button>
+            <button onclick="openModal()">Login</button>
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <form id="registrationForm">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required>
+
+                        <label for="Registeremail">Email</label>
+                        <input type="email" name="Registeremail" id="Registeremail" required>
+
+                        <label for="Registermobile">Mobile</label>
+                        <input type="tel" name="Registermobile" id="Registermobile" required>
+
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <section>
