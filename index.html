@@ -80,56 +80,177 @@
         </div>
         <div class="component2">
             <div class="left-panel">
-                <div id="active-one" class="option">
+                <div class="option" onclick="showForm('form1', this)" id="active-one">
                     <span>Elevate</span>
                     <p>Health plan that covers it all. Designed for everyone.</p>
                 </div>
-                <div class="option">
+                <div class="option" onclick="showForm('form2', this)">
                     <span>MaxProtect</span>
                     <p>High-sum insured comprehensive policy for you & your family.</p>
                 </div>
-                <div class="option">
+                <div class="option" onclick="showForm('form3', this)">
                     <span>Health Booster</span>
                     <p>ncrease your existing cover value</p>
                 </div>
-                <div class="option">
+                <div class="option" onclick="showForm('form4', this)">
                     <span>Health AdvantEdge</span>
                     <p>Comprehensive health policy</p>
                 </div>
-                <div class="option">
+                <div class="option" onclick="showForm('form5', this)">
                     <span>Arogya Sanjeevani Policy</span>
                     <p>Standard health policy</p>
                 </div>
-                <div class="option">
+                <div class="option" onclick="showForm('form6', this)">
                     <span>Personal Protect</span>
                     <p>Accident protection</p>
                 </div>
 
             </div>
             <div class="right-panel">
-                <form id="Insurance-Form" autocomplete="on">
-                    <div class="grp">
-                        <input type="text" name="adult" id="adult" placeholder="Adult" required>
-                        <input type="text" name="kid" id="kid" placeholder="Kid">
-                    </div>
-                    <div class="grp">
-                        <input type="tel" id="mobile" placeholder="Mobile No." required>
-                        <input id="email" placeholder="Email" required autocomplete="off">
-                        <p id="errorM"></p>
-                    </div>
-                    <div class="grp">
-                        <input type="text" id="pincode" placeholder="Pincode" required>
-                        <input type="text" id="city" placeholder="City">
-                    </div>
-                    <div class="check-grp">
-                        <label><input type="checkbox" id="terms" required> I agree to the <a href="#">terms and
-                                conditions</a></label>
-                        <label><input type="checkbox" id="whatsapp"> I want to receive updates on WhatsApp</label>
-                    </div>
-                    <button type="Submit" class="btn">Get Quote</button>
-                    <p class="error-message"></p>
-                    <a href="#" class="link">Port Existing Policy</a>
-                </form>
+                <div id="form1" class="form">
+                    <form autocomplete="on">
+                        <div class="grp">
+                            <input type="text" name="adult" id="adult" placeholder="Adult" required>
+                            <input type="text" name="kid" id="kid" placeholder="Kid">
+                        </div>
+                        <div class="grp">
+                            <input type="tel" id="mobile" placeholder="Mobile No." required>
+                            <input id="email" placeholder="Email" required autocomplete="off">
+                        </div>
+                        <div class="grp">
+                            <input type="text" id="pincode" placeholder="Pincode" required>
+                            <input type="text" id="city" placeholder="City">
+                        </div>
+                        <div class="check-grp">
+                            <label><input type="checkbox" id="terms" required> I agree to the <a href="#">terms and
+                                    conditions</a></label>
+                            <label><input type="checkbox" id="whatsapp"> I want to receive updates on WhatsApp</label>
+                        </div>
+                        <button type="Submit" class="btn">Get Quote</button>
+                        <p class="error-message"></p>
+                        <a href="#" class="link">Port Existing Policy</a>
+                    </form>
+                </div>
+                <div id="form2" class="form">
+                    <form autocomplete="on">
+                        <div class="grp">
+                            <input type="text" name="adult" id="adult" placeholder="Adult" required>
+                            <input type="text" name="kid" id="kid" placeholder="Kid">
+                        </div>
+                        <div class="grp">
+                            <input type="tel" id="mobile" placeholder="Mobile No." required>
+                            <input id="email" placeholder="Email" required autocomplete="off">
+                        </div>
+                        <div class="grp">
+                            <input type="text" id="pincode" placeholder="Pincode" required>
+                            <input type="text" id="city" placeholder="City">
+                        </div>
+                        <div class="check-grp">
+                            <label><input type="checkbox" id="terms" required> I agree to the <a href="#">terms and
+                                    conditions</a></label>
+                            <label><input type="checkbox" id="whatsapp"> I want to receive updates on WhatsApp</label>
+                        </div>
+                        <button type="Submit" class="btn">Get Quote</button>
+                        <p class="error-message"></p>
+                        <!-- <a href="#" class="link">Port Existing Policy</a> -->
+                    </form>
+                </div>
+                <div id="form3" class="form">
+                    <form autocomplete="on">
+                        <!-- <div class="grp">
+                            <input type="text" name="adult" id="adult" placeholder="Adult" required>
+                            <input type="text" name="kid" id="kid" placeholder="Kid">
+                        </div> -->
+                        <div class="grp">
+                            <input type="tel" id="mobile" placeholder="Mobile No." required>
+                            <input id="email" placeholder="Email" required autocomplete="off">
+                        </div>
+                        <div class="grp">
+                            <!-- <input type="text" id="pincode" placeholder="Pincode" required> -->
+                            <input type="text" id="city" placeholder="City">
+                        </div>
+                        <div class="check-grp">
+                            <!-- <label><input type="checkbox" id="terms" required> I agree to the <a href="#">terms and
+                                    conditions</a></label> -->
+                            <label><input type="checkbox" id="whatsapp"> I want to receive updates on WhatsApp</label>
+                        </div>
+                        <button type="Submit" class="btn">Get Quote</button>
+                        <p class="error-message"></p>
+                        <a href="#" class="link">Port Existing Policy</a>
+                    </form>
+                </div>
+                <div id="form4" class="form">
+                    <form autocomplete="on">
+                        <div class="grp">
+                            <input type="text" name="adult" id="adult" placeholder="Adult" required>
+                            <input type="text" name="kid" id="kid" placeholder="Kid">
+                        </div>
+                        <div class="grp">
+                            <input type="tel" id="mobile" placeholder="Mobile No." required>
+                            <input id="email" placeholder="Email" required autocomplete="off">
+                        </div>
+                        <div class="grp">
+                            <input type="text" id="pincode" placeholder="Pincode" required>
+                            <input type="text" id="city" placeholder="City">
+                        </div>
+                        <div class="check-grp">
+                            <label><input type="checkbox" id="terms" required> I agree to the <a href="#">terms and
+                                    conditions</a></label>
+                            <label><input type="checkbox" id="whatsapp"> I want to receive updates on WhatsApp</label>
+                        </div>
+                        <button type="Submit" class="btn">Get Quote</button>
+                        <p class="error-message"></p>
+                        <a href="#" class="link">Port Existing Policy</a>
+                    </form>
+                </div>
+                <div id="form5" class="form">
+                    <form autocomplete="on">
+                        <div class="grp">
+                            <input type="text" name="adult" id="adult" placeholder="Adult" required>
+                            <input type="text" name="kid" id="kid" placeholder="Kid">
+                        </div>
+                        <div class="grp">
+                            <input type="tel" id="mobile" placeholder="Mobile No." required>
+                            <input id="email" placeholder="Email" required autocomplete="off">
+                        </div>
+                        <!-- <div class="grp">
+                            <input type="text" id="pincode" placeholder="Pincode" required>
+                            <input type="text" id="city" placeholder="City">
+                        </div> -->
+                        <div class="check-grp">
+                            <!-- <label><input type="checkbox" id="terms" required> I agree to the <a href="#">terms and
+                                    conditions</a></label> -->
+                            <label><input type="checkbox" id="whatsapp"> I want to receive updates on WhatsApp</label>
+                        </div>
+                        <button type="Submit" class="btn">Get Quote</button>
+                        <!-- <p class="error-message"></p>
+                        <a href="#" class="link">Port Existing Policy</a> -->
+                    </form>
+                </div>
+                <div id="form6" class="form" >
+                    <form autocomplete="on">
+                        <!-- <div class="grp">
+                            <input type="text" name="adult" id="adult" placeholder="Adult" required>
+                            <input type="text" name="kid" id="kid" placeholder="Kid">
+                        </div> -->
+                        <div class="grp">
+                            <input type="tel" id="mobile" placeholder="Mobile No." required>
+                            <input id="email" placeholder="Email" required autocomplete="off">
+                        </div>
+                        <!-- <div class="grp">
+                            <input type="text" id="pincode" placeholder="Pincode" required>
+                            <input type="text" id="city" placeholder="City">
+                        </div> -->
+                        <div class="check-grp">
+                            <label><input type="checkbox" id="terms" required> I agree to the <a href="#">terms and
+                                    conditions</a></label>
+                            <label><input type="checkbox" id="whatsapp"> I want to receive updates on WhatsApp</label>
+                        </div>
+                        <button type="Submit" class="btn">Get Quote</button>
+                        <!-- <p class="error-message"></p>
+                        <a href="#" class="link">Port Existing Policy</a> -->
+                    </form>
+                </div>
             </div>
         </div>
         <div class="component3">

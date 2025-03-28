@@ -216,7 +216,7 @@
         /* width: 60%; */
         background-color: #EBE9EC;
         padding: 5%;
-        flex-grow: 3;
+        flex-grow: 4;
     }
 
     .left-panel p {
@@ -256,7 +256,11 @@
         font-size: 20px;
     }
 
-    #Insurance-Form button{
+    .form {
+        display: none; 
+    }
+
+    .form button{
         background-color: #0A2046;
         border: 1px solid #0A2046;
         border-radius: 10px;

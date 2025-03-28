@@ -1,4 +1,5 @@
-  function toggle (){
+//  mobile navigation dropdown
+ function toggle (){
     const navList = document.querySelector('.nav');
     navList.classList.toggle('active');
  }
@@ -62,6 +63,58 @@
 
 
  });
+
+ // component2 multiple-Forms onclick
+
+ function showForm(formId,clickedItem){
+  const forms = document.querySelectorAll('.form');
+  forms.forEach(form => {
+    form.style.display = 'none' ;
+  });
+
+  const selectedForm = document.getElementById(formId);
+  if (selectedForm) {
+    selectedForm.style.display = 'block'; 
+  }
+
+  const options = document.querySelectorAll('.left-panel .option');
+  options.forEach( option => {
+    option.classList.remove('active');
+  });
+
+  clickedItem.classList.add('active');
+
+ };
+
+ window.onload = function() {
+  const firstOption = document.querySelector('.left-panel .option');
+  showForm('form1', firstOption); 
+
+  loadFormData('form1');
+  loadFormData('form2');
+  loadFormData('form3');
+  loadFormData('form4');
+};
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // Insurance form 
 
 const form = document.getElementById('Insurance-Form');
 
@@ -134,6 +187,11 @@ form.addEventListener('submit',function(event){
 
 
  });
+
+
+
+
+// swiper effect on slide
 
 
 const swiper = new Swiper('.mySwiper', {
