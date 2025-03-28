@@ -236,10 +236,11 @@
         cursor: pointer;
         transition: 0.3s ease;
     }
-
-    #active-one {
+    
+    .active {
         background-color: #0A2046;
-    }
+        color: white;
+      }
 
     .option:hover {
         background-color: #0A2046;
