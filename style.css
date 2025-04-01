@@ -98,9 +98,14 @@
         color: #aaa;
         font-size: 30px;
         font-weight: bold;
-        position: absolute;
-        top: 10px;
-        right: 20px;
+        position: relative;
+        top: -40px;
+        right: -40px;
+        float: right;
+        background-color:#333;
+        border-radius: 50%;
+        border: 1px solid #333;
+        padding: 0 10px
       }
       
       .close:hover,
@@ -236,7 +241,7 @@
         cursor: pointer;
         transition: 0.3s ease;
     }
-    
+
     .active {
         background-color: #0A2046;
         color: white;
@@ -451,6 +456,14 @@
     .swiper-button-next:after {
         content: url('images/Right-Arrowbutton.png') !important;
     }
+
+    /* .swiper-slide{
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    } */
 
     .slide {
         border: 1px solid white;
@@ -740,35 +753,61 @@
     }
 
     .faq-img img {
-        margin-top: -100px;
+        margin-top: -130px;
         width: 100%;
     }
 
-    .faq-txt p {
+
+    .faq-txt .accordion {
         margin: 0;
         font-weight: bold;
         margin-top: 10px;
+        width: 100%;
+        text-align: left;
+        border: 0;
+        background-color: #0FBDC7;
+        font-size: 18px;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+    .accordion span{
+        float: right;
     }
 
-    .faq-txt .para {
+    .faq-txt .accordion-content {
         font-weight: 400;
+        margin-top: 10px;
+        display: none;
     }
 
-    .faq-txt button {
+    .faq-txt .view-more {
         background-color: #0FBDC7;
         border: 1px solid #0A2046;
         width: 20%;
         height: 45px;
+        display: flex;
         border-radius: 10px;
         margin: 15px 0px;
         color: #0A2046;
-        background-image: url('images/view-more.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        background-position-x: 128px;
         font-size: 16px;
         background-size: 18px;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
     }
+
+    .view-more img{
+        width: 20px;
+    }
+
+    .toggle-sign {
+        font-size: 20px;
+        font-weight: bold;
+      }
 
     .component12 {
         padding: 4rem 4rem;
@@ -1133,7 +1172,7 @@
         padding: 10px;
     }
 
-    .faq-txt button {
+    .faq-txt .view-more {
         width: 30%;
     }
 
@@ -1378,7 +1417,7 @@
         margin-top: 5px;
     }
 
-    .faq-txt button {
+    .faq-txt .view-more {
         width: 50%;
     }
 
@@ -1790,7 +1829,7 @@
         font-size: 12px;
     }
 
-    .faq-txt button {
+    .faq-txt .view-more {
         width: 42%;
         background-position-x: 128px
     }
