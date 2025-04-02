@@ -47,6 +47,10 @@
         padding: 0;
     }
 
+    .nav ul :hover {
+        color: #0FBDC7;
+    }
+
     .nav {
         display: flex;
         justify-content: space-between;
@@ -1715,7 +1719,7 @@
     }
 
     .slide li {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .component6 {
